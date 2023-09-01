@@ -89,11 +89,14 @@ void setup()
 
 void loop()
 {
-	// Print Time every 30s
-	if (millis() - prev >= 30000)
+	// Print Time every minute changes
+	if (millis() - prev >= 1000)
 	{
-		now += ((millis() - prev) / 1000);
-		Serial.print(viewTime(now));
+		now += (millis() - prev) / 1000;
 		prev = millis();
+		if (now % 60 == 0)
+		{
+			Serial.print(viewTime(now));
+		}
 	}
 }
