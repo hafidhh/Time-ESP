@@ -50,7 +50,7 @@ void wifi(const char* ssid, const char* password)
  * @brief Get the Time from NTP server
  * 
  * @param timezone GMT+, example >> GMT+7, timezone = 7
- * @return String time
+ * @return int now (timestamp)
  */
 int syncTime(int timezone)
 {
