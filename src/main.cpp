@@ -69,7 +69,7 @@ int syncTime(int timezone)
  * @brief timestamp to human time
  * 
  * @param time 
- * @return String 
+ * @return String asctime (human time)
  */
 String viewTime(int time)
 {
