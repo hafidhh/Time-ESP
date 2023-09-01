@@ -22,7 +22,7 @@
 const char* ssid = "your_ssid"; //SSID WIFI
 const char* password = "your_password"; // Password WIFI
 
-long prev, now;
+unsigned long prev, now;
 
 /**
  * @brief Connect WiFi
